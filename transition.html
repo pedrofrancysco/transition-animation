@@ -24,11 +24,46 @@
     }
     .box-red{
         background-color: #f00;
+        transition-duration: 5s;
+        transition-property: background-color;
+    }
+
+    .box-red:hover{
+        background-color: #ff0;
+        transition-duration: 5s;
+        transition-property: background-color;
+    }
+
+    .line{
+        width: 100%;
+        background-color: blue;
+        height: 25px;
+        transition: width;
+        margin-bottom: 10px;
+        transition-duration: 1s;
+    }
+
+    .ease{
+        transition-timing-function: ease;
+    }
+
+    .body:hover .line{
+        width: 20px;
+        background-color: aqua;
+
+    }
+
+    .ease-in{
+        transition-timing-function: ease-in;
     }
      
 </style>
 <body>
-    <div class="box-red"></div>
+    <div class="box-red"></div> 
+    
+    <div class="ease-in"></div>
+  
        
 </body>
 </html>
+
